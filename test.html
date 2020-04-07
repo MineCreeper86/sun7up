@@ -14,9 +14,9 @@ var 播放量得分 = Math.round(parseInt(watches)/10);
 var 平均播放分 = Math.round(watches/video*2);
 var 投币率得分 = Math.round(coins/watches*100000);
 
-document.getElementById("播放量得分").innerHTML="<font size="10">播放量得分</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font size="7" color=Red>"+播放量得分+"</font>";
+document.getElementById("播放量得分").innerHTML=播放量得分;
 </script>
 </head>
 <body>
-  <p id="播放量得分"><font size="10">播放量得分</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+  <font size="10">播放量得分</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font size="7" color=Red><p id="播放量得分">0</p></font>
 </body>
