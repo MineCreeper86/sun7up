@@ -1,4 +1,4 @@
-<!--sun7up - commit ID v62.0 final patch-->
+<!--sun7up - commit ID v64.0 fix patch 1-->
 <!--功能更新完毕-->
 <head>
 <title id="title">UP主测评</title>
@@ -89,10 +89,10 @@ UP天数：<input type="text" id="updays"></input><br>
   var s9s14 = s9+s10+s11+s12+s13+s14;
   document.getElementById("scores2").innerHTML=("日均活跃篇-总分："+s9s14);
   
-  var s15 = Math.round(likes*2-coins+1000);
-  var s16 = Math.round(coins*20-videos*20+1000);
-  var s17 = Math.round(shares*200-videos*30+1000);
-  var s18 = Math.round(fans*100-videos*20+1000);
+  var s15 = Math.round(likes-coins/2+500);
+  var s16 = Math.round(coins*10-videos*10+500);
+  var s17 = Math.round(shares*100-videos*15+500);
+  var s18 = Math.round(fans*50-videos*10+500);
   var s19 = Math.round(videos*100-upday);
   document.getElementById("s15p").innerHTML=(""+s15);
   document.getElementById("s16p").innerHTML=(""+s16);
