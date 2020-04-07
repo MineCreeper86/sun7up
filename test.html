@@ -1,15 +1,22 @@
 <head>
 <script>
-var fans = ("请输入你的粉丝数量","")
-var watches = ("请输入你视频的观看数量","")
-var discusses = ("请输入你视频的评论数量","")
-var danmu = ("请输入你视频的弹幕数量","")
-var likes = ("请输入你视频的点赞数量","")
-var shares = ("请输入你视频的分享数量","")
-var coins = ("请输入你视频的硬币数量","")
-var stars = ("请输入你视频的收藏数量","")
+var fans = prompt("请输入你的粉丝数量","");
+var videos = prompt("请输入你的稿件数量","");
+var watches = prompt("请输入你视频的观看数量","");
+var discusses = prompt("请输入你视频的评论数量","");
+var danmu = prompt("请输入你视频的弹幕数量","");
+var likes = prompt("请输入你视频的点赞数量","");
+var shares = prompt("请输入你视频的分享数量","");
+var coins = prompt("请输入你视频的硬币数量","");
+var stars = prompt("请输入你视频的收藏数量","");
+
+var 播放量得分 = Math.round(parseInt(watches)/10);
+var 平均播放分 = Math.round(watches/video*2);
+var 投币率得分 = Math.round(coins/watches*100000);
+
+document.getElementById("播放量得分").innerHTML="<font size="10">播放量得分</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font size="7" color=Red>"+播放量得分+"</font>";
 </script>
 </head>
 <body>
-
+  <p id="播放量得分"><font size="10">播放量得分</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
 </body>
