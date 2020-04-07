@@ -28,6 +28,7 @@ UP天数：<input type="text" id="updays"></input><br>
   <font size="20"><p id="scores2">日均活跃篇-总分：-</p></font>
   <font size="6"><div style="background:url(荣誉证书.png) no-repeat center center;width:1197px;height:612px">
     <br><br><br><br><font size="8"><div id="mont"></div></font>
+    <div style="height:45px" id="ryzs1"></div><div style="height:45px" id="ryzs2"></div><div style="height:45px" id="ryzs3"></div><div style="height:45px" id="ryzs4"></div>
   </div></font>
 <script>
   function test(){
@@ -75,6 +76,10 @@ UP天数：<input type="text" id="updays"></input><br>
   var now = new Date();
   var month=now.getMonth()+1;
   document.getElementById("mont").innerHTML=("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+month);
+  document.getElementById("ryzs1").innerHTML=("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+s1s8);
+  document.getElementById("ryzs2").innerHTML=("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+s9s);
+  document.getElementById("ryzs3").innerHTML=("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+0);
+  document.getElementById("ryzs4").innerHTML=("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+0);
   }
 </script>
 </body>
