@@ -26,7 +26,9 @@ UP天数：<input type="text" id="updays"></input><br>
   <font size="5">日均点赞分</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font size="4" color=Red><p id="s11p">-</p></font>
   <font size="5">日均硬币分</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font size="4" color=Red><p id="s12p">-</p></font>
   <font size="20"><p id="scores2">日均活跃篇-总分：-</p></font>
-  <font size="7"><div style="background:url(荣誉证书.png) no-repeat center center;width:1197px;height:612px" id="ryzs"></div></font>
+  <font size="6"><div style="background:url(荣誉证书.png) no-repeat center center;width:1197px;height:612px">
+    <br><br><br><br><font size="8"><div id="mont"></div></font>
+  </div></font>
 <script>
   function test(){
   var fans = document.getElementById("fansp").value;
@@ -72,7 +74,7 @@ UP天数：<input type="text" id="updays"></input><br>
     
   var now = new Date();
   var month=now.getMonth()+1;
-  document.getElementById("ryzs").innerHTML=("<br><br><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+month);
+  document.getElementById("mont").innerHTML=("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+month);
   }
 </script>
 </body>
