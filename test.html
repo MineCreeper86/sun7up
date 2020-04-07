@@ -1,16 +1,18 @@
 <head>
 </head>
 <body>
-  粉丝数量：<input type="text" id="fansp"></input><br>
-  <input type="button" onclick="test()" value="提交">
-  <font size="8">播放量得分</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font size="4" color=Red><p id="s1p">填写有误无法计算</p></font>
-  <font size="8">平均播放分</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font size="4" color=Red><p id="s2p">填写有误无法计算</p></font>
-  <font size="8">观看币率分</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font size="4" color=Red><p id="s3p">填写有误无法计算</p></font>
+粉丝数量：<input type="text" id="fansp"></input><br>
+稿件数量：<input type="text" id="videosp"></input><br>
+观看数量：<input type="text" id="watchesp"></input><br>
+  <input type="button" onclick="test()" value="提交"><br><br>
+  <font size="8">播放量得分</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font size="4" color=Red><p id="s1p">-</p></font>
+  <font size="8">平均播放分</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font size="4" color=Red><p id="s2p">-</p></font>
+  <font size="8">观看币率分</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font size="4" color=Red><p id="s3p">-</p></font>
 <script>
   function test(){
-  var fans = prompt("请输入你的粉丝数量","");
-  var videos = prompt("请输入你的稿件数量","");
-  var watches = prompt("请输入你视频的观看数量","");
+  var fans = document.getElementById("fansp");
+  var videos = document.getElementById("videosp");
+  var watches = document.getElementById("watchesp");
   var discusses = prompt("请输入你视频的评论数量","");
   var danmu = prompt("请输入你视频的弹幕数量","");
   var likes = prompt("请输入你视频的点赞数量","");
