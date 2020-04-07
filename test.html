@@ -20,10 +20,11 @@ UP天数：<input type="text" id="updays"></input><br>
   <font size="5">路转粉率分</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font size="4" color=Red><p id="s6p">-</p></font>
   <font size="5">观看分享分</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font size="4" color=Red><p id="s7p">-</p></font>
   <font size="5">互动活跃分</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font size="4" color=Red><p id="s8p">-</p></font>
-  <font size="5">日均播放分</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font size="4" color=Red><p id="s9p">-</p></font>
   <font size="20"><p id="scores1">视频质量篇-总分：-</p></font>
   <font size="5">日均播放分</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font size="4" color=Red><p id="s9p">-</p></font>
   <font size="5">视频产量分</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font size="4" color=Red><p id="s10p">-</p></font>
+  <font size="5">日均点赞分</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font size="4" color=Red><p id="s11p">-</p></font>
+  <font size="5">日均硬币分</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font size="4" color=Red><p id="s12p">-</p></font>
   <font size="20"><p id="scores2">日均活跃篇-总分：-</p></font>
 <script>
   function test(){
@@ -58,10 +59,14 @@ UP天数：<input type="text" id="updays"></input><br>
   document.getElementById("scores1").innerHTML=("视频质量篇-总分："+s1s8);
     
   var s9 = Math.round(watches/upday*10);
-  var s10 = Math.round(videos/upday*1000);
+  var s10 = Math.round(videos/upday*5000);
+  var s11 = Math.round(likes/upday*100);
+  var s12 = Math.round(coins/upday*1000);
   document.getElementById("s9p").innerHTML=(""+s9);
   document.getElementById("s10p").innerHTML=(""+s10);
-  var s9s = s9+s10;
+  document.getElementById("s11p").innerHTML=(""+s11);
+  document.getElementById("s12p").innerHTML=(""+s12);
+  var s9s = s9+s10+s11+s12;
   document.getElementById("scores2").innerHTML=("日均活跃篇-总分："+s9s);
   }
 </script>
