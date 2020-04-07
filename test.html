@@ -14,9 +14,13 @@ var s1 = Math.round(parseInt(watches)/10);
 var s2 = Math.round(watches/videos*2);
 var s3 = Math.round(coins/watches*100000);
 
-document.getElementById("s1").innerHTML=s1;
+  document.getElementById("s1p").innerHTML=s1;
+  document.getElementById("s2p").innerHTML=s2;
+  document.getElementById("s3p").innerHTML=s3;
 </script>
 </head>
 <body>
-  <font size="10">播放量得分</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font size="7" color=Red><p id="s1">0</p></font>
+  <font size="10">播放量得分</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font size="7" color=Red><p id="s1p">0</p></font>
+  <font size="10">平均播放分</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font size="7" color=Red><p id="s2p">0</p></font>
+  <font size="10">观看币率分</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font size="7" color=Red><p id="s3p">0</p></font>
 </body>
