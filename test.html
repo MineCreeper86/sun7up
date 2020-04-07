@@ -10,10 +10,17 @@
 分享数量：<input type="text" id="sharesp"></input><br>
 硬币数量：<input type="text" id="coinsp"></input><br>
 收藏数量：<input type="text" id="starsp"></input><br>
+UP天数：<input type="text" id="updays"></input><br>
   <input type="button" onclick="test()" value="提交"><br><br>
   <font size="8">播放量得分</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font size="4" color=Red><p id="s1p">-</p></font>
   <font size="8">平均播放分</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font size="4" color=Red><p id="s2p">-</p></font>
   <font size="8">观看币率分</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font size="4" color=Red><p id="s3p">-</p></font>
+  <font size="8">观看赞率分</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font size="4" color=Red><p id="s3p">-</p></font>
+  <font size="8">观看收藏分</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font size="4" color=Red><p id="s3p">-</p></font>
+  <font size="8">路转粉率分</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font size="4" color=Red><p id="s3p">-</p></font>
+  <font size="8">观看分享分</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font size="4" color=Red><p id="s3p">-</p></font>
+  <font size="8">互动活跃分</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font size="4" color=Red><p id="s3p">-</p></font>
+  <font size="20"><p id="scores">-</p></font>
 <script>
   function test(){
   var fans = document.getElementById("fansp").value;
@@ -22,17 +29,30 @@
   var discusses = document.getElementById("discussesp").value;
   var danmu = document.getElementById("danmup").value;
   var likes = document.getElementById("likesp").value;
-  var shares = document.getElementById("sharesp").value);
+  var shares = document.getElementById("sharesp").value;
   var coins = document.getElementById("coinsp").value;
   var stars = document.getElementById("starsp").value;
+  var upday = document.getElementById("updays").value;
 
   var s1 = Math.round(parseInt(watches)/10);
   var s2 = Math.round(watches/videos*2);
   var s3 = Math.round(coins/watches*100000);
+  var s4 = Math.round(likes/watches*10000);
+  var s5 = Math.round(stars/watches*120000);
+  var s6 = Math.round(fans/watches*500000);
+  var s7 = Math.round(fans/watches*1000000);
+  var s8 = Math.round((danmu+discusses)/watches*10000);
 
   document.getElementById("s1p").innerHTML=(""+s1);
   document.getElementById("s2p").innerHTML=(""+s2);
   document.getElementById("s3p").innerHTML=(""+s3);
+  document.getElementById("s4p").innerHTML=(""+s4);
+  document.getElementById("s5p").innerHTML=(""+s5);
+  document.getElementById("s6p").innerHTML=(""+s6);
+  document.getElementById("s7p").innerHTML=(""+s7);
+  document.getElementById("s8p").innerHTML=(""+s8);
+  var score = s1+s2+s3+s4+s5+s6+s7+s8;
+  document.getElementById("scores").innerHTML=("总分："+score);
   }
 </script>
 </body>
