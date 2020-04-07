@@ -41,7 +41,7 @@ UP天数：<input type="text" id="updays"></input><br>
   var s5 = Math.round(stars/watches*120000);
   var s6 = Math.round(fans/watches*500000);
   var s7 = Math.round(shares/watches*1000000);
-  var s8 = Math.round(((danmu+discusses)/watches)*10000);
+  var s8 = Math.round(((parseInt(danmu)+parseInt(discusses))/watches)*10000);
 
   document.getElementById("s1p").innerHTML=(""+s1);
   document.getElementById("s2p").innerHTML=(""+s2);
