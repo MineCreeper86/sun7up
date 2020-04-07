@@ -1,26 +1,26 @@
 <head>
-<script>
-var fans = prompt("请输入你的粉丝数量","");
-var videos = prompt("请输入你的稿件数量","");
-var watches = prompt("请输入你视频的观看数量","");
-var discusses = prompt("请输入你视频的评论数量","");
-var danmu = prompt("请输入你视频的弹幕数量","");
-var likes = prompt("请输入你视频的点赞数量","");
-var shares = prompt("请输入你视频的分享数量","");
-var coins = prompt("请输入你视频的硬币数量","");
-var stars = prompt("请输入你视频的收藏数量","");
-
-var s1 = Math.round(watches/10);
-var s2 = Math.round(watches/videos*2);
-var s3 = Math.round(coins/watches*100000);
-
-  document.getElementById("s1p").innerHTML=(""+s1);
-  document.getElementById("s2p").innerHTML=(""+s2);
-  document.getElementById("s3p").innerHTML=(""+s3);
-</script>
 </head>
 <body>
   <font size="8">播放量得分</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font size="4" color=Red><p id="s1p">0</p></font>
   <font size="8">平均播放分</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font size="4" color=Red><p id="s2p">0</p></font>
   <font size="8">观看币率分</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font size="4" color=Red><p id="s3p">0</p></font>
+<script>
+  var fans = prompt("请输入你的粉丝数量","");
+  var videos = prompt("请输入你的稿件数量","");
+  var watches = prompt("请输入你视频的观看数量","");
+  var discusses = prompt("请输入你视频的评论数量","");
+  var danmu = prompt("请输入你视频的弹幕数量","");
+  var likes = prompt("请输入你视频的点赞数量","");
+  var shares = prompt("请输入你视频的分享数量","");
+  var coins = prompt("请输入你视频的硬币数量","");
+  var stars = prompt("请输入你视频的收藏数量","");
+
+  var s1 = Math.round(watches/10);
+  var s2 = Math.round(watches/videos*2);
+  var s3 = Math.round(coins/watches*100000);
+
+  document.getElementById("s1p").innerHTML=(""+s1);
+  document.getElementById("s2p").innerHTML=(""+s2);
+  document.getElementById("s3p").innerHTML=(""+s3);
+</script>
 </body>
