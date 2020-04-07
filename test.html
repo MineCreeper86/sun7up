@@ -4,6 +4,12 @@
 粉丝数量：<input type="text" id="fansp"></input><br>
 稿件数量：<input type="text" id="videosp"></input><br>
 观看数量：<input type="text" id="watchesp"></input><br>
+评论数量：<input type="text" id="discussesp"></input><br>
+弹幕数量：<input type="text" id="danmup"></input><br>
+点赞数量：<input type="text" id="likesp"></input><br>
+分享数量：<input type="text" id="sharesp"></input><br>
+硬币数量：<input type="text" id="coinsp"></input><br>
+收藏数量：<input type="text" id="starsp"></input><br>
   <input type="button" onclick="test()" value="提交"><br><br>
   <font size="8">播放量得分</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font size="4" color=Red><p id="s1p">-</p></font>
   <font size="8">平均播放分</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font size="4" color=Red><p id="s2p">-</p></font>
@@ -13,12 +19,12 @@
   var fans = document.getElementById("fansp").value;
   var videos = document.getElementById("videosp").value;
   var watches = document.getElementById("watchesp").value;
-  var discusses = prompt("请输入你视频的评论数量","");
-  var danmu = prompt("请输入你视频的弹幕数量","");
-  var likes = prompt("请输入你视频的点赞数量","");
-  var shares = prompt("请输入你视频的分享数量","");
-  var coins = prompt("请输入你视频的硬币数量","");
-  var stars = prompt("请输入你视频的收藏数量","");
+  var discusses = document.getElementById("discussesp").value;
+  var danmu = document.getElementById("danmup").value;
+  var likes = document.getElementById("likesp").value;
+  var shares = document.getElementById("sharesp").value);
+  var coins = document.getElementById("coinsp").value;
+  var stars = document.getElementById("starsp").value;
 
   var s1 = Math.round(parseInt(watches)/10);
   var s2 = Math.round(watches/videos*2);
