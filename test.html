@@ -70,7 +70,8 @@ UP天数：<input type="text" id="updays"></input><br>
   var s9s = s9+s10+s11+s12;
   document.getElementById("scores2").innerHTML=("日均活跃篇-总分："+s9s);
     
-  var month=obj.getMonth()+1;
+  var now = new Date();
+  var month=now.getMonth()+1;
   document.getElementById("ryzs").innerHTML=("<br><br><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+month);
   }
 </script>
