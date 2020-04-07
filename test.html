@@ -15,11 +15,11 @@ UP天数：<input type="text" id="updays"></input><br>
   <font size="8">播放量得分</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font size="4" color=Red><p id="s1p">-</p></font>
   <font size="8">平均播放分</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font size="4" color=Red><p id="s2p">-</p></font>
   <font size="8">观看币率分</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font size="4" color=Red><p id="s3p">-</p></font>
-  <font size="8">观看赞率分</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font size="4" color=Red><p id="s3p">-</p></font>
-  <font size="8">观看收藏分</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font size="4" color=Red><p id="s3p">-</p></font>
-  <font size="8">路转粉率分</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font size="4" color=Red><p id="s3p">-</p></font>
-  <font size="8">观看分享分</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font size="4" color=Red><p id="s3p">-</p></font>
-  <font size="8">互动活跃分</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font size="4" color=Red><p id="s3p">-</p></font>
+  <font size="8">观看赞率分</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font size="4" color=Red><p id="s4p">-</p></font>
+  <font size="8">观看收藏分</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font size="4" color=Red><p id="s5p">-</p></font>
+  <font size="8">路转粉率分</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font size="4" color=Red><p id="s6p">-</p></font>
+  <font size="8">观看分享分</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font size="4" color=Red><p id="s7p">-</p></font>
+  <font size="8">互动活跃分</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font size="4" color=Red><p id="s8p">-</p></font>
   <font size="20"><p id="scores">-</p></font>
 <script>
   function test(){
@@ -40,8 +40,8 @@ UP天数：<input type="text" id="updays"></input><br>
   var s4 = Math.round(likes/watches*10000);
   var s5 = Math.round(stars/watches*120000);
   var s6 = Math.round(fans/watches*500000);
-  var s7 = Math.round(fans/watches*1000000);
-  var s8 = Math.round((danmu+discusses)/watches*10000);
+  var s7 = Math.round(shares/watches*1000000);
+  var s8 = Math.round(((danmu+discusses)/watches)*10000);
 
   document.getElementById("s1p").innerHTML=(""+s1);
   document.getElementById("s2p").innerHTML=(""+s2);
